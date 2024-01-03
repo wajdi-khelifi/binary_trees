@@ -51,4 +51,75 @@ int binary_tree_is_root(const binary_tree_t *node);
 /* Task 6 */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 
+/* Task 7 */
+void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Task 8 */
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Task 9 */
+size_t binary_tree_height(const binary_tree_t *tree);
+
+/* Task 10 */
+size_t binary_tree_depth(const binary_tree_t *tree);
+
+/* Task 11 */
+size_t binary_tree_size(const binary_tree_t *tree);
+
+/* Task 12 */
+size_t binary_tree_leaves(const binary_tree_t *tree);
+
+/* Task 13 */
+size_t binary_tree_nodes(const binary_tree_t *tree);
+
+/* Task 14 */
+int binary_tree_balance(const binary_tree_t *tree);
+
+/* Task 15 */
+int binary_tree_is_full(const binary_tree_t *tree);
+
+/* Task 16 */
+int binary_tree_is_perfect(const binary_tree_t *tree);
+
+/* Task 17 */
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+
+/* Task 18 */
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+
+/* Task 19 */
+binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
+	const binary_tree_t *second);
+
+/* Task 20 */
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
+
+/* Task 21 */
+int binary_tree_is_complete(const binary_tree_t *tree);
+
+/* Task 22 */
+binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
+
+/* Task 23 */
+binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+
+/* Task 24 */
+int binary_tree_is_bst(const binary_tree_t *tree);
+
+/* Task 25 */
+bst_t *bst_insert(bst_t **tree, int value);
+bst_t *array_to_bst(int *array, size_t size);
+bst_t *bst_search(const bst_t *tree, int value);
+bst_t *bst_remove(bst_t *root, int value);
+int binary_tree_is_avl(const binary_tree_t *tree);
+avl_t *avl_insert(avl_t **tree, int value);
+avl_t *array_to_avl(int *array, size_t size);
+avl_t *avl_remove(avl_t *root, int value);
+avl_t *sorted_array_to_avl(int *array, size_t size);
+int binary_tree_is_heap(const binary_tree_t *tree);
+heap_t *heap_insert(heap_t **root, int value);
+heap_t *array_to_heap(int *array, size_t size);
+int heap_extract(heap_t **root);
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+
 #endif /* BINARY_TREES_H */
